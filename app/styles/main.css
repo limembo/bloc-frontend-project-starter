@@ -1,0 +1,41 @@
+
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Open Sans';
+    background-color: white
+    color: black;
+    min-height: 100%;
+    padding-bottom: 200px;
+}
+
+
+section {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    background-color: lightgrey;
+    color: black;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.heading {
+    text-align: center;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .section {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+}

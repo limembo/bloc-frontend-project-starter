@@ -35,7 +35,35 @@ section {
     text-align: center;
 }
 
+
 @media all and (min-width: 768px) {
     .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
     .section {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+}
+
+
+.new-room-button {
+    border: 3px solid black;
+    padding: 3rem;
+    margin-left: 0.5rem;
+    font-family: 'Open Sans';
+    font-size: 100%;
+
+}
+
+.room-nav {
+    background-color: lightgray;
+    position: fixed;
+    width: 25%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    height: 100%; 
+    position: fixed; 
+    overflow: auto; 
+} 
+
+.roomID {
+    font-family: 'Open Sans';
+    font-size: 50%;
 }

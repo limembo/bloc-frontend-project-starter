@@ -4,7 +4,18 @@
      </div>
      <span class="new-room-button" type="button" ng-click="home.addRoom()">New Room</span>
 
-     <div ng-repeat="room in home.rooms" class="roomID">
-             <h4>{{ room.name }}</h4>
+     <div ng-repeat="room in home.rooms">
+            <h3 class="room-name" ng-click="home.setCurrentRoom(room)">{{ room.name }}</h3>             
      </div>
 </section>
+<div class="message-section">
+    <div class = "heading">
+        <h1> Messages </h1>
+    </div>
+    <h2>{{home.currentRoom.name}}</h2>
+    <div class = "message" ng-repeat="message in home.messages">
+        <div class="content">{{ message.content }}</div>
+        <div class="time">{{ message.sentAt }}</div>
+        <div class="username">{{ message.username }}</div>
+    </div>
+</div>

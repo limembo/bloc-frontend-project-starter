@@ -1,5 +1,6 @@
 (function() {
     function HomeCtrl(Room, Message, $uibModal) {
+        var home = this;
         home.rooms = Room.all;
 
         home.addRoom = function() {

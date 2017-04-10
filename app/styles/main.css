@@ -7,6 +7,7 @@
 
 html {
     height: 100%;
+    width: 100%;
     font-size: 100%;
     background-color: #ccffee;
 }
@@ -14,8 +15,9 @@ html {
 body {
     font-family: 'Georgia', 'serif';
     color: black;
-    min-height: 100%;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
+    height: 100%; 
+    width: 100%;
 }
 
 
@@ -23,7 +25,7 @@ section {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 35%;
+    width: 30%;
     background-color: #ccffee;
     color: black;
     height: 100%; /* Full height */
@@ -54,7 +56,7 @@ section {
     margin-left: 0.5rem;
     font-family: 'Georgia', 'serif';
     top: 50%;
-    font-size: 20px;
+    font-size: 15px;
     background-color: white;
 }
 
@@ -65,7 +67,6 @@ section {
     top: 0px;
     left: 0px;
     height: 100%;
-    height: 100%; 
     position: fixed; 
     overflow: auto; 
     font-family: 'Georgia', 'serif';
@@ -80,9 +81,9 @@ section {
 
 .message-section{
     background-color: #ccffee;
-    height: 100%;
+    height: 90%;
     font-family: 'Georgia', 'serif';
-
+    
 }
  
 
@@ -106,4 +107,23 @@ h2 {
 
 .time {
     text-align: center;
+}
+
+.message-box {
+    text-align: center;
+    height: 10%;
+}
+.message-text {
+    width: 300px;
+    text-align: center;
+}
+
+.message-button {
+}
+
+.all-messages {
+    text-align: center;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
 }

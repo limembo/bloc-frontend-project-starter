@@ -1,7 +1,6 @@
 (function() {
     function ModalCtrl(Room, $uibModalInstance, $cookies) {
         var modal = this;
-        $modalProvider.options.keyboard = true;
 
         modal.cancel = function () {
             $uibModalInstance.dismiss();
@@ -13,7 +12,7 @@
         };
 
         modal.createUsername = function () {
-            $cookies.putObject('blocChatCurrentUser', modal.username)
+            $cookies.put('blocChatCurrentUser', modal.username)
             $uibModalInstance.close();
         };
     }

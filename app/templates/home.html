@@ -1,3 +1,4 @@
+<body class ="home-page">
 <section class= "navigation" >
      <div class = "heading">
          <h1> Bloc Chat </h1>
@@ -9,6 +10,7 @@
             <h3 class="room-name" ng-click="home.setCurrentRoom(room)">{{ room.name }}</h3>   
     </div>          
 </section>
+<div class ="all-messages">
 <div class="message-section">
     <div class = "heading">
         <h1> Messages </h1>
@@ -20,3 +22,9 @@
         <div class="username-time">{{ message.username }} sent {{ message.sentAt }}</div>
     </div>
 </div>
+<div class="message-box">
+    <input class="message-text" placeholder="Enter your message here" type="text" ng-model="home.newMessage">
+    <button class="message-button" type="button" ng-submit="home.createMessage()">Send</button>
+</div>
+</div>
+</body>

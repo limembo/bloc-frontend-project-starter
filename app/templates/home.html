@@ -11,20 +11,20 @@
     </div>          
 </section>
 <div class ="all-messages">
-<div class="message-section">
-    <div class = "heading">
-        <h1> Messages </h1>
+    <div class="message-section">
+        <div class = "heading">
+            <h1> Messages </h1>
+        </div>
+        <h2>{{home.currentRoom.name}}</h2>
+        <div class = "message" ng-repeat="message in home.messages">
+            <br/>        
+            <div class="content">{{ message.content }}</div>
+            <div class="username-time">{{ message.username }} sent {{ message.sentAt }}</div>
+        </div>
     </div>
-    <h2>{{home.currentRoom.name}}</h2>
-    <div class = "message" ng-repeat="message in home.messages">
-        <br/>        
-        <div class="content">{{ message.content }}</div>
-        <div class="username-time">{{ message.username }} sent {{ message.sentAt }}</div>
+    <div class="message-box">
+        <input class="message-text" placeholder="Enter your message here" type="text" ng-model="home.newMessage">
+        <button class="message-button" type="button" ng-submit="home.createMessage()">Send</button>
     </div>
-</div>
-<div class="message-box">
-    <input class="message-text" placeholder="Enter your message here" type="text" ng-model="home.newMessage">
-    <button class="message-button" type="button" ng-submit="home.createMessage()">Send</button>
-</div>
 </div>
 </body>

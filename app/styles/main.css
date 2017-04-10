@@ -8,8 +8,7 @@
 html {
     height: 100%;
     width: 100%;
-    font-size: 100%;
-    background-color: #ccffee;
+    background-color: #b3ffe6;
 }
 
 body {
@@ -26,7 +25,7 @@ section {
     margin: 0;
     padding: 0;
     width: 30%;
-    background-color: #ccffee;
+    background-color: ##e6fff7;
     color: black;
     height: 100%; /* Full height */
     position: fixed; /* Make it stick, even on scroll */
@@ -61,7 +60,7 @@ section {
 }
 
 .room-nav {
-    background-color: #ccffee;
+    background-color: #b3ffe6;
     position: fixed;
     width: 25%;
     top: 0px;
@@ -80,18 +79,18 @@ section {
 }
 
 .message-section{
-    background-color: #ccffee;
+    background-color: #b3ffe6;
     height: 90%;
     font-family: 'Georgia', 'serif';
     
 }
- 
 
 .messages {
     font-family: 'Georgia', 'serif';
     text-align: center;
 
 }
+
 h2 {
     text-align: center;
 }
@@ -126,4 +125,5 @@ h2 {
     height: 100%;
     padding-left: 100px;
     padding-right: 100px;
+    background-color: #b3ffe6 !important;
 }

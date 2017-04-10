@@ -3,7 +3,6 @@
         var home = this;
         home.rooms = Room.all;
         home.currentUser = $cookies.get('blocChatCurrentUser');
-
         home.addRoom = function() {
             $uibModal.open({
                 animation: true,

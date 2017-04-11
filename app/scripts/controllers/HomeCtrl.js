@@ -3,6 +3,7 @@
         var home = this;
         home.rooms = Room.all;
         home.currentUser = $cookies.get('blocChatCurrentUser');
+        home.currentRoom = null;
         home.addRoom = function() {
             $uibModal.open({
                 animation: true,
@@ -12,16 +13,17 @@
             });
         }
 
-        home.createMessage = function() {
-            home.newMessage.roomId = home.currentRoom.$id;
-            home.newMessage.username = home.currentUser;
-            Message.create(home.newMessage);
-        }
-
         home.setCurrentRoom = function(room){
             home.currentRoom = room;
             home.messages = Message.getByRoomId(home.currentRoom.$id);
             console.log(home.messages);
+        }
+
+
+        home.sendMessage = function() {
+            home.newMessage.roomId = home.currentRoom.$id;
+            home.newMessage.username = home.currentUser;
+            Message.send(home.newMessage);
         }
                
     }

@@ -111,6 +111,7 @@ h2 {
 .message-box {
     text-align: center;
     height: 10%;
+    position: fixed; 
 }
 .message-text {
     width: 300px;

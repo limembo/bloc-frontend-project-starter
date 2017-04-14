@@ -1,8 +1,9 @@
 <body class ="home-page">
+     <div class = "bloc-heading">
+        <div class="bloc"> Bloc Chat </div>     
+     </div>    
 <section class= "navigation" >
-     <div class = "heading">
-         <h1> Bloc Chat </h1>
-     </div>
+    <br/>
      <div class= "button">
          <span class="new-room-button" type="button" ng-click="home.addRoom()">New Room</span>
     </div>
@@ -12,7 +13,7 @@
 </section>
 <div class ="all-messages">
     <div class="message-section">
-        <div class = "heading">
+        <div class = "message-heading">
             <h1> Messages </h1>
         </div>
         <h2>{{home.currentRoom.name}}</h2>
